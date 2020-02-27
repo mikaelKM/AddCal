@@ -27,8 +27,8 @@ private  Button sb_btn2;
         EditText e2 = (EditText) findViewById(R.id.editText2);
         TextView t1 = (TextView) findViewById(R.id.textView);
 
-        int num1 = Integer.parseInt(e1.getText().toString());
-        int num2 = Integer.parseInt(e2.getText().toString());
+        float num1 = Integer.parseInt(e1.getText().toString());
+        float num2 = Integer.parseInt(e2.getText().toString());
 
         if (num1 == ' '){
             Toast.makeText(MainActivity.this, "you must enter the first number to add", Toast.LENGTH_SHORT
@@ -37,8 +37,8 @@ private  Button sb_btn2;
             Toast.makeText(MainActivity.this, "you must enter the second number to add", Toast.LENGTH_SHORT
             ).show();
         } else {
-            int sum = num1 + num2;
-            t1.setText(Integer.toString(sum));
+            float sum = num1 + num2;
+            t1.setText(Float.toString(sum));
         }
     }
     public void onButtonClickDivide(View v){
@@ -47,8 +47,8 @@ private  Button sb_btn2;
         TextView t1 = (TextView) findViewById(R.id.textView);
         sb_btn = (Button) findViewById(R.id.button);
 
-        int num1 = Integer.parseInt(e1.getText().toString());
-        int num2 = Integer.parseInt(e2.getText().toString());
+        float num1 = Integer.parseInt(e1.getText().toString());
+        float num2 = Integer.parseInt(e2.getText().toString());
         if (num1 == ' '){
 
                             Toast.makeText(MainActivity.this, "The first field has no number must be filled with numbers", Toast.LENGTH_SHORT
@@ -60,8 +60,8 @@ private  Button sb_btn2;
                             ).show();
 
         } else {
-            int sum = num1 / num2;
-            t1.setText(Integer.toString(sum));
+            float sum = num1 / num2;
+            t1.setText(Float.toString(sum));
         }
     }
 
